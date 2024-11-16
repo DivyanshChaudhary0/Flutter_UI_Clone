@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  html {
+    font-size: clamp(10px, 1vw, 20px);
+  }
+
+  nav{
+    width: 100%;
+    height: 100px;
+    padding: 1.5rem 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+}
+nav .image-div img{
+    width: 130px;
+}
+nav .links{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+nav .links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+nav .links button{
+    padding: 10px 26px;
+    border-radius: 20px;
+    color: white;
+    background-color: #0468D7;
+    font-size: 500;
+    border: none;
+}
+nav .links a:hover{
+    border-bottom: 1px solid black;
+}
+  
+  main .view1-linear-gradient {
+    width: 100%;
+    background-image: linear-gradient(to right bottom, #D3FFF5, #F3FCFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .view1 {
+    max-width: 1920px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    padding: 8vh 12vw;
+  }
+  main .view1 .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .view1 .top .text {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    padding-left: 2em;
+    padding-right: 7em;
+  }
+  main .view1 .top .text h1 {
+    font-size: 4.2em;
+    line-height: 1.2;
+  }
+  main .view1 .top .img {
+    flex-basis: 50%;
+  }
+  main .view1 .top .img img {
+    width: 100%;
+  }
+  main .view1 .bottom {
+    width: 100%;
+  }
+  main .view1 .bottom p {
+    font-size: 2.2em;
+    text-align: center;
+    padding: 0 3em;
+  }
+  main .view2 {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8vh 12vw;
+  }
+  main .view2 .center {
+    width: 100%;
+    display: flex;
+    gap: 2em;
+  }
+  main .view2 .center .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border-top: 5px solid rgb(222, 219, 219);
+    padding-top: 2em;
+  }
+  main .view2 .center .card h3 {
+    font-size: 2em;
+  }
+  main .view2 .center .card p {
+    font-size: 1.2em;
+  }
+  main .view2 .center .card img {
+    margin-top: 3em;
+    width: 18em;
+  }
+  
+  @media (max-width: 600px) {
+    main .view1 {
+      padding: 8vh 4vw;
+      gap: 8em;
+    }
+    main .view1 .top {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+      gap: 8em;
+    }
+    main .view1 .top .text {
+      padding: 0 0;
+    }
+    main .view1 .top .text h1 {
+      text-align: center;
+      font-size: 4.2em;
+    }
+    main .view1 .bottom p {
+      font-size: 2.4em;
+      padding: 0 2vw;
+    }
+    main .view2 {
+      align-items: flex-start;
+      padding: 10vh 6vw;
+    }
+    main .view2 .center {
+      flex-direction: column;
+      gap: 3em;
+    }
+    main .view2 .center .card {
+      width: 100%;
+      gap: 5em;
+    }
+    main .view2 .center .card h3 {
+      font-size: 3em;
+    }
+    main .view2 .center .card p {
+      font-size: 2em;
+    }
+    main .view2 .center .card img {
+      width: 90%;
+      margin-top: 3em;
+    }
+  }
